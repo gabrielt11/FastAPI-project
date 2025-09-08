@@ -42,8 +42,8 @@ POST /auth/jwt/login — логин, получение JWT токена.
 Пакетное создание коротких ссылок из списка URL.
 Вход: { "original_urls": ["https://site1.com", "https://site2.com"] }
 
-##Инструкция по запуску
-#Предварительные требования
+## Инструкция по запуску
+# Предварительные требования
 Python 3.8+
 PostgreSQL (локально или удаленно)
 Установите зависимости: pip install fastapi uvicorn sqlalchemy asyncpg fastapi-users[sqlalchemy] python-dotenv
@@ -54,7 +54,7 @@ PostgreSQL (локально или удаленно)
 4. Запустите приложение: uvicorn src.main:app --reload
 5. Откройте в браузере: http://127.0.0.1:8000/docs (Swagger UI для тестирования API).
 
-#Переменные окружения (.env)
+# Переменные окружения (.env)
 Создайте файл .env в корне проекта:
 
 SECRET=your_jwt_secret_key
@@ -149,7 +149,7 @@ Authorization: Bearer <token>
 ## Описание БД
 Проект использует PostgreSQL с SQLAlchemy. Таблицы создаются на основе моделей в models.py.
 
-#Таблицы
+# Таблицы
 
 # user:
 
